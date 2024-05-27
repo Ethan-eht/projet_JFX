@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="263.0" prefWidth="187.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jo.projet_olympiques.controller.AthleteDetailsController">
+   <ImageView fitHeight="92.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@img/622093e093e86c66c21cfc9b.png" />
+      </image>
+   </ImageView>
+    <Label fx:id="countryLabel" text="Country:" />
+
+    <Label fx:id="nameLabel" text="Name:" />
+    <Label fx:id="ageLabel" text="Age:" />
+    <Label fx:id="genderLabel" text="Gender:" />
+
+</VBox>

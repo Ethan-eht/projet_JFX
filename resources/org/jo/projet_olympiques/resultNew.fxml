@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="368.0" prefWidth="312.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jo.projet_olympiques.controller.ResultNewController">
+    <TextField fx:id="resultField" layoutX="58.0" layoutY="287.0" prefWidth="200" promptText="Résultat" />
+    <Button fx:id="saveButton" layoutX="119.0" layoutY="323.0" text="Enregistrer">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+   <ChoiceBox fx:id="eventChoiceBox" layoutX="83.0" layoutY="143.0" prefWidth="150.0" />
+   <Label layoutX="98.0" layoutY="119.0" text="Choix de l'événement :" />
+   <ChoiceBox fx:id="athleteChoiceBox" layoutX="83.0" layoutY="202.0" prefWidth="150.0" />
+   <TextField fx:id="timeField" layoutX="58.0" layoutY="244.0" prefWidth="200" promptText="Temps" />
+   <Label layoutX="109.0" layoutY="182.0" text="Choix de l'athlète :" />
+   <ImageView fitHeight="93.0" fitWidth="98.0" layoutX="110.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@img/622093e093e86c66c21cfc9b.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

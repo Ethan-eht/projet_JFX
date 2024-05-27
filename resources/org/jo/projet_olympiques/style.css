@@ -1,0 +1,76 @@
+.sidebar {
+    -fx-background-color: #333;
+    -fx-background-radius: 0px 50px 0px 0px;
+    -fx-padding: 20px;
+
+}
+
+.sidebar .label {
+    -fx-text-fill: black;
+    -fx-background-color: white;
+    -fx-background-radius: 25px;
+}
+
+.table-view {
+    -fx-background-color: #3c3c3c;
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 5px;
+}
+
+.table-row-cell {
+    -fx-border-color: transparent;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+
+
+.table-row-cell {
+    -fx-background-color: white;
+}
+
+.table-column {
+    -fx-background-color: transparent;
+}
+
+.table-cell {
+    -fx-text-fill: black;
+    -fx-alignment: CENTER;
+    -fx-background-color: transparent;
+}
+
+.text-field {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #bbb;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+
+.button {
+    -fx-background-color: white;
+    -fx-color: white;
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-margin: 4px 2px;
+    -fx-cursor: pointer;
+    -fx-border-radius: 5px;
+    -fx-cursor: Hand;
+    -fx-border-width: 2px;
+    -fx-border-color: #333;
+
+}
+
+
+.date-picker {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #bbb;
+    -fx-border-radius: 5px;
+}
+
+.choice-box {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #bbb;
+    -fx-border-radius: 5px;
+}
+

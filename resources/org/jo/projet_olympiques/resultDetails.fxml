@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="398.0" prefWidth="675.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jo.projet_olympiques.controller.ResultDetailsController">
+    <TableView fx:id="resultTable" layoutX="20" layoutY="20" prefHeight="360.0" prefWidth="637.0">
+        <columns>
+            <TableColumn fx:id="athleteColumn" prefWidth="130.0" text="Athlète" />
+            <TableColumn fx:id="eventColumn" prefWidth="100.0" text="Événement" />
+            <TableColumn fx:id="timeColumn" text="Temps" />
+            <TableColumn fx:id="resultColumn" text="Résultat" />
+            <TableColumn fx:id="validColumn" text="Validation" />
+        </columns>
+    </TableView>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="402.0" prefWidth="670.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jo.projet_olympiques.controller.EventListController">
+    <TableView fx:id="eventTable" layoutX="20" layoutY="20" prefHeight="360.0" prefWidth="637.0">
+        <columns>
+            <TableColumn fx:id="eventNameColumn" prefWidth="130.0" text="Nom de l'événement" />
+            <TableColumn fx:id="sportColumn" prefWidth="100.0" text="Discipline" />
+            <TableColumn fx:id="dateColumn" text="Date" />
+            <TableColumn fx:id="infoColumn" prefWidth="130.0" text="Plus d'informations" />
+            <TableColumn fx:id="editColumn" prefWidth="100.0" text="Modifier" />
+            <TableColumn fx:id="deleteColumn" prefWidth="100.0" text="Supprimer" />
+        </columns>
+    </TableView>
+</AnchorPane>

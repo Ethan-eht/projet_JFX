@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="830.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jo.projet_olympiques.controller.DashboardController">
+   <children>
+      <AnchorPane layoutY="45.0" prefHeight="355.0" prefWidth="212.0" styleClass="sidebar" stylesheets="@style.css">
+         <children>
+            <Pane layoutX="21.0" layoutY="14.0" prefHeight="50.0" prefWidth="143.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutY="8.0" prefHeight="34.0" prefWidth="143.0" stylesheets="@style.css" text="JO Manager" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Black" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox layoutY="73.0" onMouseClicked="#loadAthletesView" prefHeight="35.0" prefWidth="166.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Athletics_pictogram.svg.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" disable="true" graphicTextGap="5.0" prefHeight="36.0" prefWidth="116.0" stylesheets="@style.css" text="Athlètes" textAlignment="CENTER">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox layoutY="139.0" onMouseClicked="#loadSportsView" prefHeight="35.0" prefWidth="166.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/sportlogpng.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" disable="true" graphicTextGap="5.0" prefHeight="36.0" prefWidth="116.0" stylesheets="@style.css" text="Sports" textAlignment="CENTER">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox layoutY="204.0" onMouseClicked="#loadEventsView" prefHeight="35.0" prefWidth="166.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/912314.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" disable="true" graphicTextGap="5.0" prefHeight="36.0" prefWidth="116.0" stylesheets="@style.css" text="Evénements" textAlignment="CENTER">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox layoutY="277.0" onMouseClicked="#loadResultsView" prefHeight="35.0" prefWidth="166.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/945447.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" disable="true" graphicTextGap="5.0" prefHeight="36.0" prefWidth="116.0" stylesheets="@style.css" text="Résultats" textAlignment="CENTER">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="71.0" fitWidth="76.0" layoutX="741.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/622093e093e86c66c21cfc9b.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="216.0" layoutY="12.0" prefHeight="369.0" prefWidth="600.0" spacing="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+         <Label prefHeight="69.0" prefWidth="590.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Bienvenue à l'application des Jeux Olympiques 2024" />
+         <Label style="-fx-font-size: 18px;" text="Paris 2024" />
+
+         <Label maxWidth="600" style="-fx-font-size: 14px;" text="Du 26 juillet au 11 août 2024, Paris accueillera les Jeux Olympiques. Cette application a été conçue pour vous aider à gérer tous les aspects des jeux, y compris l'inscription des athlètes, la gestion des sites sportifs, des compétitions, et plus encore." wrapText="true" />
+
+         <Label prefHeight="37.0" prefWidth="214.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Fonctionnalités disponibles :" />
+         <VBox prefHeight="131.0" prefWidth="600.0" spacing="10.0">
+            <Label maxWidth="600" text="- Gestion des athlètes : Enregistrez, modifiez et supprimez les informations des athlètes." wrapText="true" />
+            <Label maxWidth="600" text="- Gestion des disciplines sportives : Enregistrez et attribuez des disciplines sportives." wrapText="true" />
+            <Label maxWidth="600" text="- Gestion des événements : Créez des événements sportifs et attribuez des athlètes." wrapText="true" />
+            <Label maxWidth="600" text="- Enregistrement des résultats : Enregistrez et validez les résultats des compétitions." wrapText="true" />
+            <Label maxWidth="600" prefWidth="600.0" text="- Tableau des médailles : Affichez les classements par pays et par athlète." wrapText="true" />
+            <padding>
+               <Insets bottom="10.0" />
+            </padding>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+         </VBox>
+         
+      </VBox>
+   </children>
+</AnchorPane>

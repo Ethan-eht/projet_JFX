@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jo.projet_olympiques.controller.ResultController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="703.0" stylesheets="@style.css">
+         <children>
+            <AnchorPane layoutY="45.0" prefHeight="393.0" prefWidth="212.0" styleClass="sidebar" stylesheets="@style.css">
+               <children>
+                  <Pane layoutX="22.0" layoutY="14.0" prefHeight="30.0" prefWidth="150.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutY="8.0" prefHeight="34.0" prefWidth="143.0" stylesheets="@style.css" text="JO Manager" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox layoutY="73.0" onMouseClicked="#loadAthletesView" prefHeight="35.0" prefWidth="166.0">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Athletics_pictogram.svg.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" disable="true" graphicTextGap="5.0" prefHeight="36.0" prefWidth="116.0" stylesheets="@style.css" text="Athlètes" textAlignment="CENTER">
+                           <font>
+                              <Font name="Copperplate Gothic Light" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox layoutY="139.0" onMouseClicked="#loadSportsView" prefHeight="35.0" prefWidth="166.0">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/sportlogpng.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" disable="true" graphicTextGap="5.0" prefHeight="36.0" prefWidth="116.0" stylesheets="@style.css" text="Sports" textAlignment="CENTER">
+                           <font>
+                              <Font name="Copperplate Gothic Light" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox layoutY="204.0" onMouseClicked="#loadEventsView" prefHeight="35.0" prefWidth="166.0">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/912314.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" disable="true" graphicTextGap="5.0" prefHeight="36.0" prefWidth="116.0" stylesheets="@style.css" text="Evénements" textAlignment="CENTER">
+                           <font>
+                              <Font name="Copperplate Gothic Light" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox layoutY="277.0" onMouseClicked="#loadResultsView" prefHeight="35.0" prefWidth="166.0">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/945447.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" blendMode="OVERLAY" disable="true" graphicTextGap="5.0" prefHeight="36.0" prefWidth="116.0" stylesheets="@style.css" text="Résultats" textAlignment="CENTER">
+                           <font>
+                              <Font name="Copperplate Gothic Light" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="71.0" fitWidth="76.0" layoutX="618.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/622093e093e86c66c21cfc9b.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="252.0" layoutY="78.0" prefHeight="61.0" prefWidth="317.0" text="Résultats">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="newResult" layoutX="483.0" layoutY="184.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="200.0" text="Enregistrer de Nouveaux Résultats" />
+            <Button fx:id="validateResult" layoutX="483.0" layoutY="287.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="200.0" text="Valider des Résultats" />
+            <Button fx:id="seeResults" layoutX="252.0" layoutY="287.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="187.0" text="Voir les Résultats" />
+            <Button fx:id="seeLdb" layoutX="252.0" layoutY="184.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="187.0" text="Classements" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
