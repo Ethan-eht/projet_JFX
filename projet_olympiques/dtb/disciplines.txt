@@ -1,0 +1,8 @@
+1,Football
+2,Badminton
+3,Volleyball
+4,Course
+5,Natation
+6,Course d'obstacle
+7,Athlétisme
+8,Formule 1
